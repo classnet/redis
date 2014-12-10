@@ -1,3 +1,15 @@
-from https://github.com/hoisie/redis
+//index.go
+package main
 
-key.go,string.go,hash.go,list.go,set.go,zset.go,server.go从redis.go中分离出来
+import (
+	"./model"
+	"net/http"
+)
+
+func main() {
+
+	http.HandleFunc("/reg", model.Reg) //设置访问的路由
+	http.HandleFunc("/login", model.Login)
+	http.ListenAndServe(":85", nil) //设置监听的端口
+}
+
