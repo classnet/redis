@@ -1,7 +1,7 @@
 goredis
 
 Hello World example
-
+<code>
 package main
 
 import "github.com/hoisie/redis"
@@ -13,3 +13,4 @@ func main() {
     val, _ := client.Get("hello")
     println(key, string(val))
 }
+</code>
