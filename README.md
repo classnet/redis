@@ -1,12 +1,15 @@
 goredis
 
-from https://github.com/hoisie/redis
+Hello World example
 
-key.go,
-string.go,
-hash.go,
-list.go,
-set.go,
-zset.go,
-server.go
-从redis.go中分离出来
+package main
+
+import "github.com/hoisie/redis"
+
+func main() {
+    var client redis.Client
+    var key = "hello"
+    client.Set(key, []byte("world"))
+    val, _ := client.Get("hello")
+    println(key, string(val))
+}
