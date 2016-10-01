@@ -1,4 +1,5 @@
-[code]
+<code>
+
 package main
 
 import "github.com/classnet/redis"
@@ -11,4 +12,4 @@ func main() {
     println(key, string(val))
 }
 
-[/code]
+</code>
