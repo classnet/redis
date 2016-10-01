@@ -1,15 +1,14 @@
 <code>
 
-package main
+package main<br />
 
-import "github.com/classnet/redis"
+import "github.com/classnet/redis"<br />
 
-func main() {
-    var client redis.Client
-    var key = "hello"
-    client.Set(key, []byte("world"))
-    val, _ := client.Get("hello")
-    println(key, string(val))
+func main() {<br />
+    var client redis.Client<br />
+    var key = "hello"<br />
+    client.Set(key, []byte("world"))<br />
+    val, _ := client.Get("hello")<br />
+    println(key, string(val))<br />
 }
-
 </code>
