@@ -2,7 +2,7 @@
 package main
 
 import (
-	"./model"
+	"./model"/r/d
 	"net/http"
 )
 
